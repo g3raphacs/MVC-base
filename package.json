@@ -1,0 +1,9 @@
+{
+    "name": "base",
+    "version": "1.0.0",
+    "description": "base",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./public/style/style.scss:./public/css/style.css"
+    }
+  }

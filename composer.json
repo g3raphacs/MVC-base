@@ -1,0 +1,21 @@
+{
+    "name": "lejee/myscraping",
+    "authors": [
+        {
+            "name": "jm",
+            "email": "mathieu4job@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "application/class"
+        }
+    },
+    "require": {
+        "altorouter/altorouter": "1.1.0",
+        "symfony/var-dumper": "^5.1",
+        "twig/twig": "^3.2",
+        "respect/validation": "^2.0",
+        "phpmailer/phpmailer": "^6.1"
+    }
+}
