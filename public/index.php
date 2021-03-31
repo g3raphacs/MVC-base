@@ -1,10 +1,10 @@
 <?php
 require_once '../vendor/autoload.php';
 
-// use App\Twig;
+use App\Twig;
 
 // Constants_____________________________________
-define("BASE_PATH","/MVC-base/") ;
+define("BASE_PATH","/") ;
 
 //ROUTER
 $uri = $_SERVER['REQUEST_URI'];
@@ -15,12 +15,11 @@ $router->setBasePath('');
 $router->map('GET', BASE_PATH, function () {
     echo "Page d'Accueil";
 
-    //render template
-    // $twig = new Twig('base.html.twig');
-    // $twig->render([
-    //         'categories' => $categories->data,
-    //         // 'SERVER_URI' => SERVER_URI,
-    //     ]);
+    // render template
+    $twig = new Twig('base.html.twig');
+    $twig->render([
+            'variable1' => "test variable"
+        ]);
 });
 
 //404 Page __________________________________

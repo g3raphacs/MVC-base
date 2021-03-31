@@ -7,9 +7,10 @@ class Twig{
 
     public function __construct($template_name)
     {
-        $loader = new \Twig\Loader\FilesystemLoader('../application/templates');
+        $path_current = dirname( __DIR__ );
+        $loader = new \Twig\Loader\FilesystemLoader($path_current.DIRECTORY_SEPARATOR.'view');
         $twig = new \Twig\Environment($loader, [
-            'cache' => '../application/cache',
+            'cache' => $path_current.DIRECTORY_SEPARATOR."cache",
             'debug' => true,
         ]);
         $twig->addExtension(new \Twig\Extension\DebugExtension());
