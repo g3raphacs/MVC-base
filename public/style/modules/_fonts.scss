@@ -1,0 +1,27 @@
+
+
+// FONTS Variables________________________________________________
+$font-main: 'Lato', sans-serif;
+
+// FONTS Size____________________________________________________
+$font-sizes: 13 14 15 16 18 20 24 30 36;
+@each $size in $font-sizes{
+    .f-#{$size}{
+        $size: $size/16;
+        font-size: #{$size}rem;
+    }
+}
+
+// FONTS Weight____________________________________________________
+$font-weight: 100 200 300 400 500 600 700 800 900;
+@each $weight in $font-weight{
+    .fweight-#{$weight}{
+        font-size: #{$weight};
+    }
+}
+
+// Align_________________
+.txt-left       {   text-align     : left;      }
+.txt-right      {   text-align     : right;     }
+.txt-center     {   text-align     : center;    }
+.txt-justify    {   text-align     : justify;   }
