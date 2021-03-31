@@ -13,7 +13,6 @@ body *{box-sizing: border-box;}
 // reset links style
 a{
     text-decoration: none;
-    @extend %txt-main-light;
 }
 // hide lists bullets
 li{list-style: none;}
